@@ -1,0 +1,7 @@
+Redmine Plugin: View Commits in Github
+
+This plugin let's you redirect to GitHub when viewing commits (instead of using Redmine's builtin repository browser).
+
+Set the GitHub user/repository in plugin's configure page for those projects that are hosted on Github.
+
+Tested with Redmine v2.3

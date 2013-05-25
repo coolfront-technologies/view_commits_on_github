@@ -1,0 +1,10 @@
+<fieldset>
+<legend>GitHub Repositories</legend>
+
+<p>To view a project's commits on Github (instead of in Redmine), enter the github_username/repository_name. For example: <code>joyent/node</code></p>
+<% Project.all().sort_by{|proj| proj.name.downcase}.each do |proj| %>
+<p>
+  <label><%=h proj.name%></label><%= text_field_tag "settings[#{proj.identifier}]", @settings[proj.identifier], :size => 70 %>
+</p>
+<% end %>
+</fieldset>
